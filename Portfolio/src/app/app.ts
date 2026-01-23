@@ -2,7 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { Header } from "./shared/header/header";
 import { Footer } from "./shared/footer/footer";
-
+import { Pageinfo } from './services/pageinfo';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +11,7 @@ import { Footer } from "./shared/footer/footer";
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Portfolio');
+  constructor(public _pageinfo: Pageinfo) {
+    
+  }
 }

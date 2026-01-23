@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
+import { Pageinfo } from '../../services/pageinfo';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +9,5 @@ import { RouterLink, RouterLinkActive } from "@angular/router";
   styleUrl: './header.css',
 })
 export class Header {
-
+  constructor(public _service: Pageinfo) { }
 }
