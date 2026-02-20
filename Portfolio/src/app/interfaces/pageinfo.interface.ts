@@ -1,4 +1,4 @@
-export interface PageInfoIf {
+export interface PageInfo {
     titulo?: string;
     nombre_corto?: string;
     pagina_autor?: string;
